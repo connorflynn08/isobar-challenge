@@ -36,9 +36,9 @@ const Courses = () => {
                     <div className="courseContainer">
                         <h1>{reactCourse.reactName}</h1>
                         <p>{reactCourse.reactDescription}</p>
-                        <p>{reactCourse.reactAuthor}</p>
-                        <p>{reactCourse.reactPublishDate}</p>
-                        <p>{reactCourse.reactDuration}</p>
+                        <p>Author: {reactCourse.reactAuthor}</p>
+                        <p>Publish date: {reactCourse.reactPublishDate}</p>
+                        <p>Course duration: {reactCourse.reactDuration}</p>
                         <img id="courseimg" src="https://cdn.auth0.com/blog/react-js/react.png"></img>
                     </div>
                 )
@@ -51,9 +51,9 @@ const Courses = () => {
                     <div className="courseContainer">
                         <h1>{vueCourse.name}</h1>
                         <p>{vueCourse.description}</p>
-                        <p>{vueCourse.author}</p>
-                        <p>{vueCourse.publishDate}</p>
-                        <p>{vueCourse.duration}</p>
+                        <p>Author: {vueCourse.author}</p>
+                        <p>Publish date: {vueCourse.publishDate}</p>
+                        <p>Course duration: {vueCourse.duration}</p>
                         <img id="courseimg" src="https://vuejs.org/images/logo.png"></img>
                     </div>
                 )
@@ -66,9 +66,9 @@ const Courses = () => {
                     <div className="courseContainer">
                         <h1>{cssCourse.name}</h1>
                         <p>{cssCourse.description}</p>
-                        <p>{cssCourse.author}</p>
-                        <p>{cssCourse.publishDate}</p>
-                        <p>{cssCourse.duration}</p>
+                        <p>Author: {cssCourse.author}</p>
+                        <p>Publish Date: {cssCourse.publishDate}</p>
+                        <p>Course duration: {cssCourse.duration}</p>
                         <img id="courseimg" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png"></img>
                     </div>
                 )
@@ -81,9 +81,9 @@ const Courses = () => {
                     <div className="courseContainer">
                         <h1>{jsCourse.name}</h1>
                         <p>{jsCourse.description}</p>
-                        <p>{jsCourse.author}</p>
-                        <p>{jsCourse.publishDate}</p>
-                        <p>{jsCourse.duration}</p>
+                        <p>Author: {jsCourse.author}</p>
+                        <p>Publish date: {jsCourse.publishDate}</p>
+                        <p>Course duration: {jsCourse.duration}</p>
                         <img id="courseimg" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png"></img>
                     </div>
                 )

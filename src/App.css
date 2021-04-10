@@ -22,6 +22,7 @@
   align-items: center;
   align-content: center;
   background-repeat: no-repeat;
+  width: 500px;
 }
 
 #courseimg {
@@ -29,8 +30,10 @@
   width: 200px;
 }
 
+.css-yk16xz-control, .css-1pahdxg-control, .css-26l3qy-menu{
+  width: 500px;
+}
 
-img {
-  display: flex;
-  flex-direction: row;
+.css-26l3qy-menu{
+  width: 500px;
 }
