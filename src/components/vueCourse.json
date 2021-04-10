@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Vue - learn vue in an hour",
+        "description": "This course teaches you how to build a vue application in an hour.",
+        "author": "Michael Brown",
+        "publishDate": "17/10/2019",
+        "duration": "00:00:59",
+        "image": "https://vuejs.org/images/logo.png"
+      }
+]
