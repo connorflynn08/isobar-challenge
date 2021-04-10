@@ -1,0 +1,17 @@
+.form-control{
+  margin-top: 200px;
+}
+
+
+.container {
+  display: inline-flex;
+  margin: 20px;
+  flex-flow: column;
+}
+
+.sidebar{
+  float: left;
+  width: 100px;
+  background: blue;
+  min-height: 1000px;
+}
