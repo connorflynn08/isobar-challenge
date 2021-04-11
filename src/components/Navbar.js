@@ -5,7 +5,7 @@ const Navbar = () => {
         <div>
             <nav className="navbar navbar-light bg-light">
                 <a className="navbar-brand">CourseFinder</a>
-]            </nav>
+           </nav>
         </div>
     )
 }
