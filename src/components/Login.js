@@ -4,11 +4,22 @@ import { Modal, Button, Form } from 'react-bootstrap';
 
 const Login = () => {
     const [show, setShow] = useState(false);
-    const [email, setEmail] = useState('')
+    const [email, setEmail] = useState([''])
     const [password, setPassword] = useState('')
+    const [loggedIn, setLoggedIn] = useState(false)
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-  
+
+    console.log(loggedIn)
+
+    if (loggedIn === true){
+        return (
+            <div>
+                <h1>LOGGED IN</h1>
+            </div>
+        )
+    }
+
     return (
       <>
         <Button variant="primary" onClick={handleShow}>
@@ -23,17 +34,16 @@ const Login = () => {
           <Form>
             <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)}   />
                 <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
                 </Form.Text>
             </Form.Group>
-
             <Form.Group controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
             </Form.Group>
-            <Button variant="primary" type="submit" onClick={handleClose}>
+            <Button variant="primary" type="submit" value={loggedIn} onClick={function(event){ handleClose(event); setLoggedIn(true);}}>
                 Submit
             </Button>
             </Form>
@@ -41,5 +51,6 @@ const Login = () => {
       </>
     );
   }
+
 
 export default Login

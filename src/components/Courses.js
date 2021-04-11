@@ -40,7 +40,7 @@ const Courses = () => {
                         <p>Author: {reactCourse.reactAuthor}</p>
                         <p>Publish date: {reactCourse.reactPublishDate}</p>
                         <p>Course duration: {reactCourse.reactDuration}</p>
-                        <img id="courseimg" src="https://cdn.auth0.com/blog/react-js/react.png"></img>
+                        <img id="courseimg" src="https://cdn.auth0.com/blog/react-js/react.png" alt="react logo"></img>
                         <Login />
                     </div>
                 )
@@ -56,8 +56,8 @@ const Courses = () => {
                         <p>Author: {vueCourse.author}</p>
                         <p>Publish date: {vueCourse.publishDate}</p>
                         <p>Course duration: {vueCourse.duration}</p>
-                        <img id="courseimg" src="https://vuejs.org/images/logo.png"></img>
-                        <button type="button" class="btn btn-primary">Add this course</button>
+                        <img id="courseimg" src="https://vuejs.org/images/logo.png" alt="vue logo"></img>
+                        <Login />
                     </div>
                 )
                 }
@@ -72,8 +72,8 @@ const Courses = () => {
                         <p>Author: {cssCourse.author}</p>
                         <p>Publish Date: {cssCourse.publishDate}</p>
                         <p>Course duration: {cssCourse.duration}</p>
-                        <img id="courseimg" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png"></img>
-                        <button type="button" class="btn btn-primary">Add this course</button>
+                        <img id="courseimg" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" alt="css logo"></img>
+                        <Login />
                     </div>
                 )
                 }
@@ -88,8 +88,8 @@ const Courses = () => {
                         <p>Author: {jsCourse.author}</p>
                         <p>Publish date: {jsCourse.publishDate}</p>
                         <p>Course duration: {jsCourse.duration}</p>
-                        <img id="courseimg" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png"></img>
-                        <button type="button" class="btn btn-primary">Add this course</button>
+                        <img id="courseimg" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png" alt="js logo"></img>
+                        <Login />
                     </div>
                 )
                 }
