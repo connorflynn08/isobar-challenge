@@ -5,6 +5,7 @@ import cssCourse from './cssCourse.json';
 import jsCourse from './jsCourse.json';
 import Select from 'react-select';
 import { useState } from 'react';
+import Login from './Login';
 
 
 
@@ -21,7 +22,7 @@ const Courses = () => {
     const [ course, setCourse ] = useState(options[0]);
 
     return (
-        <div>
+        <div className="container">
             <div className="container">
                 <Select
                     className="basic-single"
@@ -40,6 +41,7 @@ const Courses = () => {
                         <p>Publish date: {reactCourse.reactPublishDate}</p>
                         <p>Course duration: {reactCourse.reactDuration}</p>
                         <img id="courseimg" src="https://cdn.auth0.com/blog/react-js/react.png"></img>
+                        <Login />
                     </div>
                 )
                 }
@@ -55,6 +57,7 @@ const Courses = () => {
                         <p>Publish date: {vueCourse.publishDate}</p>
                         <p>Course duration: {vueCourse.duration}</p>
                         <img id="courseimg" src="https://vuejs.org/images/logo.png"></img>
+                        <button type="button" class="btn btn-primary">Add this course</button>
                     </div>
                 )
                 }
@@ -70,6 +73,7 @@ const Courses = () => {
                         <p>Publish Date: {cssCourse.publishDate}</p>
                         <p>Course duration: {cssCourse.duration}</p>
                         <img id="courseimg" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png"></img>
+                        <button type="button" class="btn btn-primary">Add this course</button>
                     </div>
                 )
                 }
@@ -85,6 +89,7 @@ const Courses = () => {
                         <p>Publish date: {jsCourse.publishDate}</p>
                         <p>Course duration: {jsCourse.duration}</p>
                         <img id="courseimg" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png"></img>
+                        <button type="button" class="btn btn-primary">Add this course</button>
                     </div>
                 )
                 }
