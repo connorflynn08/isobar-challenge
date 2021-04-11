@@ -1,4 +1,4 @@
-##Isobar front end code challenge.##
+## Isobar front end code challenge
 
 As requested, I didn't go too crazy on the time allowance for this, so the makeup is pretty basic. That being said, it has functionality. 
 
