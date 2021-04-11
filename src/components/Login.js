@@ -12,6 +12,8 @@ const Login = () => {
 
     console.log(loggedIn)
 
+    // H1 indicates login is true and state is working correctly
+
     if (loggedIn === true){
         return (
             <div>
@@ -43,6 +45,7 @@ const Login = () => {
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
             </Form.Group>
+            {/* multiple function on click event to close modal and return a different display once state has been changed */}
             <Button variant="primary" type="submit" value={loggedIn} onClick={function(event){ handleClose(event); setLoggedIn(true);}}>
                 Submit
             </Button>

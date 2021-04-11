@@ -32,6 +32,10 @@ const Courses = () => {
 				    onChange={setCourse}
                 />
             </div>
+
+            {/* all options have similar build up. Mapping of individual json files to return data based on dropdown select.
+            Login component is worked into each one. Conditional render to make each option work correctly */}
+
             {course.value === 'react' ? reactCourse.map((reactCourse) => {
                 return (
                     <div className="courseContainer">
